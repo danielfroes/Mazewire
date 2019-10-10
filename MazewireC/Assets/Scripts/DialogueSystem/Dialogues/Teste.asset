@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceab03ca0d7419249be29e14ffff0a62, type: 3}
+  m_Name: Teste
+  m_EditorClassIdentifier: 
+  lines:
+    array:
+    - title: Aly
+      text: " Mas onde \xE9 que voc\xEA est\xE1 enfiando a gente Klyp?"
+    - title: Klyp
+      text: "Eu j\xE1 te disse cinco mil quinhentas e noventa e duas vezes, estamos
+        indo buscar a chave do mainframe"
+    - title: Aly
+      text: "Como voc\xEA tem tanta certeza dos poderes desse artefato?"
+    - title: Klyp
+      text: "Est\xE1s duvidando de mim ser inferior? Eu sou o DEUS deste lugar!"
+    - title: Aly
+      text: "Se \xE9 um \"DEUS\" por que voc\xEA n\xE3o consegue me mandar de volta
+        pra casa?"
+    - title: Klyp
+      text: "Voc\xEA faz perguntas demais e ajuda de menos, da uma segurada ai."
+    - title: Aly
+      text: hm
+    - title: Klyp
+      text: "Preste aten\xE7\xE3o no caminho, a seguran\xE7a n\xE3o vai nos permitir
+        passear tranquilamente."
+    - title: Aly
+      text: "Eu acho \xE9 que voc\xEA est\xE1 perdido, at\xE9 agora eu n\xE3o vi nenhum
+        seguran\xE7a"
+    - title: Klyp
+      text: "Fique atenta nas cores NEON nas paredes, quanto mais expl\xEDcitas, maior
+        a seguran\xE7a."
+    - title: Aly
+      text: " Tudo bem, mas chegamos faz 3 horas e elas ainda est\xE3o brancas"
+    - title: Aly
+      text: "Eu j\xE1 auxiliei incont\xE1veis aventureiros, os mais habilidosos e
+        corajosos, mas pode ter CERTEZA que eu jamais colocaria voc\xEA no meu linkedin"
+    - title: Aly
+      text: "R\xC1 R\xC1 R\xC1 R\xC1..."
