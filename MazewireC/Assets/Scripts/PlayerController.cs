@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
 
     public bool isGrounded;
     public bool hasDashed;
-    public static bool canMove = true;
+    public bool canMove = true;
 
     public Transform groundCheck;
     public Transform groundCheckL;
@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     
 
     private SpriteRenderer spriteR;
-    private Animator anim;
+    public Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -54,9 +54,11 @@ public class PlayerController : MonoBehaviour
         Vector2 dir = new Vector2(x, y);
         Walk(dir);
 
+        anim.SetBool("isJumping", !isGrounded);
 
         if(isGrounded && Input.GetKeyDown(KeyCode.Z) && canMove)
         {
+            
             Jump();
         }
 
@@ -80,7 +82,7 @@ public class PlayerController : MonoBehaviour
     {
         rb.velocity = new Vector2(dir.x * speed, rb.velocity.y);
 
-        if(Vector2.SqrMagnitude(rb.velocity) >= 0.5f)
+        if(Mathf.Abs(rb.velocity.x) >= 0.5f)
             anim.SetBool("isRunning", true);
         else
             anim.SetBool("isRunning", false);
@@ -94,6 +96,7 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
+        
         rb.velocity = new Vector2(rb.velocity.x, 0);
         rb.velocity += Vector2.up * jumpForce;
     }
