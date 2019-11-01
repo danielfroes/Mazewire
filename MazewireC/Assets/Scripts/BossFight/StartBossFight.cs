@@ -28,7 +28,7 @@ public class StartBossFight : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Z))
         { 
-            Debug.Log("teste");
+            // Debug.Log("teste");
             dialogueHandler.Skip();
         }
     }

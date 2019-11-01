@@ -12,15 +12,18 @@ public class Hacking : MonoBehaviour
     public Letter[] possibleLetters;
     public Queue<Letter> letterQueue;
     private Queue<Letter> lettersToErase;
+    private PlayerController player;
     void Start()
     {
+        player = FindObjectOfType<PlayerController>();
         letterQueue = new Queue<Letter>();
         lettersToErase = new Queue<Letter>();
     }
     
     public void StartHacking(int qttOfLetter, TriggerHacking hackTrigger)
     {   
-        PlayerController.canMove = false;   
+        player.canMove = false;
+        player.anim.SetBool("isHacking", true);   
         this.hackTrigger = hackTrigger.GetComponent<TriggerHacking>();
         float xPos = -0.5f * (qttOfLetter - 1)* letterWidth; //first Letter position
         
@@ -77,7 +80,8 @@ public class Hacking : MonoBehaviour
         {   
             Destroy(lettersToErase.Dequeue().gameObject);
         }
-        PlayerController.canMove = true;
+        player.canMove = true;
+        player.anim.SetBool("isHacking", false);
         hackTrigger.EndHacking();
     }
 
