@@ -15,8 +15,57 @@ MonoBehaviour:
   lines:
     array:
     - title: Aly
-      text: IHWAOhsao
+      text: "Ahh, finalmente um tempo livre pra descansar. J\xE1 fazia algum tempo
+        desde a \xFAltima vez que entrei em Parallel World."
+    - title: Aly
+      text: "Mas o que... Oi???... Que lugar \xE9 esse??"
+    - title: Aly
+      text: "Oh n\xE3o, perdi o acesso aos menus do jogo! Como eu vou sair daqui agora????"
+    - title: Aly
+      text: AAAAAAAAAHHHH SOCORROOOOO
     - title: Klyp
-      text: "osualjijas\xF3jvg\n"
-    - title: ALy
-      text: blebele
+      text: "Mas o que diabos est\xE1 acontecendo aqui? Que barulheira \xE9 essa?...\r"
+    - title: Klyp
+      text: '!!!'
+    - title: Klyp
+      text: "Mas o que em nome de nossa senhora das motherboards \xE9 voc\xEA?"
+    - title: Aly
+      text: AAAAA UM MONSTRO
+    - title: Klyp
+      text: "O \xFAnico monstro aqui \xE9 voc\xEA, oh saco de carne."
+    - title: Aly
+      text: "Espera... Voc\xEA fala?"
+    - title: Klyp
+      text: "N\xE3o.. Eu fa\xE7o libras em modo viva voz.... \xC9 CLARO QUE EU FALO
+        SEU SER INFERIOR!"
+    - title: Aly
+      text: "N\xE3o precisa ofender tamb\xE9m n\xE9"
+    - title: Klyp
+      text: "Foi voc\xEA que come\xE7ou me chamando de monstro!"
+    - title: Aly
+      text: "Tudo bem desculpe, me chamo Aly, qual seu nome?\r"
+    - title: Klyp
+      text: "Meu nome \xE9 Klypn\xE1cios Magnificus Exorbitantis, mas pode me chamar
+        de Klyp.\r"
+    - title: Aly
+      text: "Prazer em conhec\xEA-lo!"
+    - title: Klyp
+      text: "O prazer \xE9 todo seu mesmo. Mas o que voc\xEA est\xE1 fazendo aqui
+        Aly?\r"
+    - title: Aly
+      text: "Eu gostaria de saber tamb\xE9m! Era para eu estar em Parallel World!"
+    - title: Klyp
+      text: "Onde?? Bom, aparentemente isso n\xE3o importa agora. Voc\xEA est\xE1
+        em Mazewire, o melhor mundo de todos, pois \xE9 o mundo em que EU vivo."
+    - title: Aly
+      text: " Mazewire... mazewire... mazewire?\r"
+    - title: Aly
+      text: "Que jogo \xE9 esse? Como eu saio daqui? Quero voltar pra casa!!"
+    - title: Klyp
+      text: "Jogo? Que isso? Mas bem, se voc\xEA deseja voltar para casa, que obviamente
+        fica fora de mazewire voc\xEA vai precisar p\xF4r as m\xE3os na Chave do Mainframe,
+        \xE9 sua melhor chance de conseguir o que deseja."
+    - title: Aly
+      text: "Chave do Mainframe? E onde eu consigo ...\r"
+    - title: Klyp
+      text: "CUIDADO, INIMIGOS EST\xC3O CHEGANDO\r"
