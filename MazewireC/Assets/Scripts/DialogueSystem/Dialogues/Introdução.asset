@@ -63,8 +63,9 @@ MonoBehaviour:
       text: "Que jogo \xE9 esse? Como eu saio daqui? Quero voltar pra casa!!"
     - title: Klyp
       text: "Jogo? Que isso? Mas bem, se voc\xEA deseja voltar para casa, que obviamente
-        fica fora de mazewire voc\xEA vai precisar p\xF4r as m\xE3os na Chave do Mainframe,
-        \xE9 sua melhor chance de conseguir o que deseja."
+        fica fora de mazewire voc\xEA vai precisar p\xF4r as m\xE3os na Chave do Mainframe."
+    - title: Klyp
+      text: "\xC9 sua melhor chance de conseguir o que deseja."
     - title: Aly
       text: "Chave do Mainframe? E onde eu consigo ...\r"
     - title: Klyp
