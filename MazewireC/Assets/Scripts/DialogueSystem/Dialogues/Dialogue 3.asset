@@ -20,8 +20,10 @@ MonoBehaviour:
     - title: Klyp
       text: "N\xE3o se pode comprar nem uma assinatura de overclock sem eles meterem
         o fedelho e parece que quanto mais obvio for o assunto, mais abstrata \xE9
-        a vis\xE3o deles, pra conseguir convenc\xEA-los de que algo obviamente vai
-        dar merda \xE9 um sufoco, e muitas vezes considero imposs\xEDvel"
+        a vis\xE3o deles."
+    - title: Klyp
+      text: "E para conseguir convenc\xEA-los de que algo obviamente vai dar merda
+        \xE9 um sufoco, e muitas vezes considero imposs\xEDvel."
     - title: Aly
       text: Caraca, que bolodemilhons
     - title: Klyp
