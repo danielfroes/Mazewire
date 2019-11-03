@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     
 
     private SpriteRenderer spriteR;
-    public Animator anim;
+    [HideInInspector] public Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -47,22 +47,30 @@ public class PlayerController : MonoBehaviour
             isGrounded = false;
         }
 
-        float x = Input.GetAxis("Horizontal");
-        float y = Input.GetAxis("Vertical");
+
         float xRaw = Input.GetAxisRaw("Horizontal");
         float yRaw = Input.GetAxisRaw("Vertical");
-        Vector2 dir = new Vector2(x, y);
-        Walk(dir);
+
+        
+        
+        if(canMove)
+        {
+            Walk(new Vector2(xRaw, yRaw));
+        }
+        else if(!canMove && !hasDashed)
+        {
+            Walk(new Vector2(0,0));
+        }
 
         anim.SetBool("isJumping", !isGrounded);
 
-        if(isGrounded && Input.GetKeyDown(KeyCode.Z) && canMove)
+        if(isGrounded && Input.GetKeyDown(KeyCode.Space) && canMove)
         {
             
             Jump();
         }
 
-        if(Input.GetKeyDown(KeyCode.X) && !hasDashed && canMove)
+        if(Input.GetKeyDown(KeyCode.Q) && !hasDashed && canMove)
         {
             if(xRaw != 0 || yRaw != 0)
                 Dash(xRaw, yRaw);

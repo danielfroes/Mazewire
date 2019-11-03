@@ -9,11 +9,13 @@ public class StartBossFight : MonoBehaviour
     [SerializeField] private GameObject invisibleWall = null;
     [SerializeField] private Vector2 bossFightCamera;
     [SerializeField] private Animator klypAnim;
+    private PlayerController player;
     private Fog.Dialogue.DialogueHandler dialogueHandler;
    
     void Start()
     {
         dialogueHandler = GetComponent<Fog.Dialogue.DialogueHandler>();
+        player = FindObjectOfType<PlayerController>();
     }
    
     void OnTriggerEnter2D(Collider2D col)
@@ -36,16 +38,24 @@ public class StartBossFight : MonoBehaviour
     {
         CameraMovement.isCameraFollowingPlayer = false;
         CameraMovement.cameraPosition = bossFightCamera;
-        invisibleWall.SetActive(true);
+        
 
-        PlayerMovement.playerCanMove = false;
-        klypAnim.SetTrigger("EnterBossArea");
-
-        GetComponent<Fog.Dialogue.DialogueHandler>().StartDialogue();
-            
+        player.canMove = false;
+        
+        dialogueHandler.StartDialogue();
       
-        
-        //gameObject.SetActive(false);
-        
-    }       
+       
+        dialogueHandler.OnDialogueEnd += StartBoss;
+    }     
+
+    private void StartBoss()
+    {
+        player.canMove = true;
+
+        klypAnim.SetTrigger("EnterBossArea");
+        invisibleWall.SetActive(true);
+   
+        dialogueHandler.OnDialogueEnd -= StartBoss; 
+        gameObject.SetActive(false);
+    }
 }
