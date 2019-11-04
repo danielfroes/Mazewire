@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     private bool facingRight = true;
     public bool isGrounded;
     public bool hasDashed;
-    public static bool canMove = true;
+    public bool canMove = true;
 
     public LayerMask whatIsEnemies;
     public Transform attackPosition;
@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
     public Transform groundCheckL;
     public Transform groundCheckR;
 
-    private Animator anim;
+    [HideInInspector]public Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +43,7 @@ public class PlayerController : MonoBehaviour
           (Physics2D.Linecast(transform.position, groundCheckL.position, 1 << LayerMask.NameToLayer("Ground"))) ||
           (Physics2D.Linecast(transform.position, groundCheckR.position, 1 << LayerMask.NameToLayer("Ground"))))
         {
+            anim.SetBool("isJumping", false);
             isGrounded = true;
             hasDashed = false;
         }
@@ -51,13 +52,18 @@ public class PlayerController : MonoBehaviour
             isGrounded = false;
         }
 
-        float x = Input.GetAxis("Horizontal");
-        float y = Input.GetAxis("Vertical");
+      
         float xRaw = Input.GetAxisRaw("Horizontal");
         float yRaw = Input.GetAxisRaw("Vertical");
-        Vector2 dir = new Vector2(x, y);
-        Walk(dir);
-
+        
+        if(canMove)
+        { 
+            Walk(new Vector2(xRaw, yRaw));
+        }
+        else if(!canMove && !hasDashed)
+        {
+            Walk(new Vector2(0,0));
+        } 
         // jump:
         if(isGrounded && Input.GetKeyDown(KeyCode.Z) && canMove)
         {
@@ -129,7 +135,8 @@ public class PlayerController : MonoBehaviour
     }
 
     private void Jump()
-    {
+    {   
+        anim.SetBool("isJumping", true);
         rb.velocity = new Vector2(rb.velocity.x, 0);
         rb.velocity += Vector2.up * jumpForce;
     }
