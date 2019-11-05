@@ -29,12 +29,15 @@ public class PlayerController : MonoBehaviour
     public Transform groundCheckR;
 
     [HideInInspector]public Animator anim;
+    private Klyp klyp;
+
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        klyp = FindObjectOfType<Klyp>();
     }
 
     private void FixedUpdate()
@@ -112,10 +115,15 @@ public class PlayerController : MonoBehaviour
         rb.velocity = new Vector2(dir.x * speed, rb.velocity.y);
 
         if(Vector2.SqrMagnitude(rb.velocity) >= 0.5f)
+        {
+            klyp.anim.SetBool("isWalking",true);
             anim.SetBool("isRunning", true);
+        }
         else
+        {
+            klyp.anim.SetBool("isWalking",false);
             anim.SetBool("isRunning", false);
-
+        }
         if(!facingRight && dir.x > 0)
         {
             Flip();
@@ -151,12 +159,15 @@ public class PlayerController : MonoBehaviour
 
     private void Attack()
     {
+
+        klyp.Attack();
         Collider2D[] enemiesToDamage = Physics2D.OverlapBoxAll(
             attackPosition.position,
             new Vector2(attackRangeX, attackRangeY),
             0,
             whatIsEnemies
         );
+
         for(int i = 0; i < enemiesToDamage.Length; i++)
         {
             enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(damage);
