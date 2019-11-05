@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4431081751804776529}
   - component: {fileID: 5764995255449530711}
-  - component: {fileID: 128772263808332825}
   - component: {fileID: 3289337073859535165}
+  - component: {fileID: 4516712919182875137}
   m_Layer: 5
   m_Name: E_Letter
   m_TagString: Untagged
@@ -46,23 +46,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8277400508020789091}
   m_CullTransparentMesh: 0
---- !u!114 &128772263808332825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8277400508020789091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8331c2bcd5a203d4290059d86c52f1f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  notPressedSprite: {fileID: 21300000, guid: b0e3cb289f1c1994cbdbb05dede48533, type: 3}
-  pressedSprite: {fileID: 21300000, guid: 5639a6d93470e0245b650111897bbe13, type: 3}
-  imageComponent: {fileID: 3289337073859535165}
-  character: 69
-  key: 101
 --- !u!114 &3289337073859535165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,3 +75,20 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &4516712919182875137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8277400508020789091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59a428d381606f74781ff536018c0e40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notPressedSprite: {fileID: 21300000, guid: b0e3cb289f1c1994cbdbb05dede48533, type: 3}
+  pressedSprite: {fileID: 21300000, guid: 5639a6d93470e0245b650111897bbe13, type: 3}
+  imageComponent: {fileID: 3289337073859535165}
+  character: 69
+  key: 101
