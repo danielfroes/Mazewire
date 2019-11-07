@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: porta fechada 4
+  m_Name: bloco quina dos lados
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: 34a07916bd407584dbbb0fdb1f3714f5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9b14ac65cc26eb6478ffb3a0eaea743e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
