@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceab03ca0d7419249be29e14ffff0a62, type: 3}
+  m_Name: Dialogue 5
+  m_EditorClassIdentifier: 
+  lines:
+    array:
+    - title: Aly
+      text: "Aaaahh quantos seguran\xE7as tem nesse lugar amaldi\xE7oado? Estou come\xE7ando
+        a ficar com c\xE3ibra!"
+    - title: Klyp
+      text: "Hahahaha, boa sorte... esses caras devem ter no minimo alguns ex\xE9rcitos,
+        estamos com sorte que eles n\xE3o est\xE3o enviando tudo de uma vez."
+    - title: Aly
+      text: "MAS QUEM S\xC3O ESSES CARAS????"
+    - title: Klyp
+      text: "Mazewire corp? Maior e mais maligna empresa de Mazewire? Fonte de todo
+        o mal, tristeza e \xF3dio do mundo?"
+    - title: Aly
+      text: "Voc\xEA esqueceu que eu n\xE3o sou daqui n\xE9?"
+    - title: Klyp
+      text: "\xE9... n\xE3o... \xC9 que voc\xEA parece t\xE3o inteligente, achei que
+        ja tinha descoberto uma hora dessas..."
+    - title: Aly
+      text: "Voc\xEA \xE9 ligeiro n\xE9 rapaz?"
+    - title: Klyp
+      text: "Sou o mais r\xE1pido deste lado da esquina!"
+    - title: Aly
+      text: rs rs rs rs rs rs
+    - title: Klyp
+      text: "Voc\xEA n\xE3o tem senso de humor!"
+    - title: Aly
+      text: "Me conta logo quem s\xE3o esses caras!!!!!"
+    - title: Klyp
+      text: "Mais inimigos \xE0 frente, vai ter que esperar"
+    - title: Aly
+      text: "Ah n\xE3o... denovo..."

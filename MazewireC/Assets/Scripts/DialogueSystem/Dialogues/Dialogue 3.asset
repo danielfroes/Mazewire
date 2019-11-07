@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceab03ca0d7419249be29e14ffff0a62, type: 3}
+  m_Name: Dialogue 3
+  m_EditorClassIdentifier: 
+  lines:
+    array:
+    - title: Klyp
+      text: "As pessoas que comandam esse lugar comandam toda a Mazewire, todos os
+        processos de tudo que voc\xEA pode imaginar t\xEAm de ser aprovado aqui."
+    - title: Klyp
+      text: "N\xE3o se pode comprar nem uma assinatura de overclock sem eles meterem
+        o fedelho e parece que quanto mais obvio for o assunto, mais abstrata \xE9
+        a vis\xE3o deles."
+    - title: Klyp
+      text: "E para conseguir convenc\xEA-los de que algo obviamente vai dar merda
+        \xE9 um sufoco, e muitas vezes considero imposs\xEDvel."
+    - title: Aly
+      text: Caraca, que bolodemilhons
+    - title: Klyp
+      text: Que?
+    - title: Aly
+      text: "Nada n\xE3o..."
+    - title: Klyp
+      text: '...'
+    - title: Aly
+      text: '...'
+    - title: Klyp
+      text: "T\xE1... Vamo continuar vai..."

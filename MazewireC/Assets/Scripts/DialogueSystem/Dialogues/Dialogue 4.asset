@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceab03ca0d7419249be29e14ffff0a62, type: 3}
+  m_Name: Dialogue 4
+  m_EditorClassIdentifier: 
+  lines:
+    array:
+    - title: Aly
+      text: "Mas e ai, vamos ter que escalar esse pr\xE9dio corporativo, extremamente
+        chato, que usam buracos aleat\xF3rios como sistema de seguran\xE7a, lutar
+        com uns seguran\xE7as bizarros e pegar a tal da Chave dos Metaflames?"
+    - title: Klyp
+      text: "KKKKKKJJ, \xE9 isso ai, a  \"Chave dos Metaflames\"."
+    - title: Aly
+      text: Ta rindo do que?
+    - title: Klyp
+      text: "\xC9 que na verdade chama \"Chave do Mainframe\""
+    - title: Aly
+      text: "P A L H A \xC7 O"
+    - title: Klyp
+      text: kkkkkjkjkjkjkjkjkjk
+    - title: Aly
+      text: "Aff! Mas e por que \xE9 que essa chave iria conseguir me tirar deste
+        lugar?"
+    - title: Klyp
+      text: "Ningu\xE9m sabe exatamente a origem deste artefato, por\xE9m seu poder
+        j\xE1 foi mostrado em diversos eventos ao longo da hist\xF3ria."
+    - title: Klyp
+      text: "A Mazewire Corp em si, s\xF3 ch\U000E38E8egou ao ponto em que esta hoje
+        pois a chave estava envolvida."
+    - title: Klyp
+      text: "Eu nunca a vi pessoalmente, por\xE9m ela sempre esteve do lado vencedor
+        em conflitos e competi\xE7\xF5es, \xE9 o \xFAnico artefato desse tipo no mundo,
+        se existe algo capaz de leva-la de volta para casa, \xE9 esta chave."
+    - title: Aly
+      text: "Eita... Agora eu estou empolgada para conseguir encontrar essa chave,
+        se ela for t\xE3o poderosa quanto voc\xEA disse, ela com certeza vai conseguir
+        me levar pra casa!"
+    - title: Klyp
+      text: "\xC9 a ideia..."

@@ -15,8 +15,10 @@ public class triggerDialogue : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.tag == "Player")
-        dialogueHandler.StartDialogue();
+        if(col.tag == "Player"){
+            dialogueHandler.StartDialogue();
+            dialogueHandler.OnDialogueEnd += deactivateTrigger; 
+        }
     }
     // Update is called once per frame
     void Update()
@@ -25,5 +27,12 @@ public class triggerDialogue : MonoBehaviour
         {
             dialogueHandler.Skip();
         }
+    }
+
+    void deactivateTrigger()
+    {
+        Debug.Log("teste");
+        gameObject.SetActive(false);
+        dialogueHandler.OnDialogueEnd -= deactivateTrigger;
     }
 }
