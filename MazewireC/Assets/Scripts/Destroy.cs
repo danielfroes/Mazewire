@@ -9,8 +9,8 @@ public class Destroy : MonoBehaviour
     // Start is called before the first frame update
     public void DestroyObject()
     {
+        FindObjectOfType<PlayerController>().canMove = true;
         Instantiate(boss);
-        PlayerMovement.playerCanMove = true;
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }

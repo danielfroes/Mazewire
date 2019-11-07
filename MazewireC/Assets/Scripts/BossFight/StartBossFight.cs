@@ -39,7 +39,7 @@ public class StartBossFight : MonoBehaviour
         CameraMovement.isCameraFollowingPlayer = false;
         CameraMovement.cameraPosition = bossFightCamera;
         
-
+        player.canAttack = false;
         player.canMove = false;
         
         dialogueHandler.StartDialogue();
@@ -50,8 +50,6 @@ public class StartBossFight : MonoBehaviour
 
     private void StartBoss()
     {
-        player.canMove = true;
-
         klypAnim.SetTrigger("EnterBossArea");
         invisibleWall.SetActive(true);
    

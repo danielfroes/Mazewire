@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    
     Rigidbody2D rb;
 
     private float timeBetweenAttack;
@@ -20,7 +21,8 @@ public class PlayerController : MonoBehaviour
     private bool facingRight = true;
     public bool isGrounded;
     public bool hasDashed;
-    public bool canMove = true;
+    [HideInInspector]public bool canMove = true;
+    [HideInInspector]public bool canAttack = true;
 
     public LayerMask whatIsEnemies;
     public Transform attackPosition;
@@ -83,7 +85,7 @@ public class PlayerController : MonoBehaviour
         // attack:
         if(timeBetweenAttack <= 0)
         {
-            if(Input.GetKeyDown(KeyCode.C)){
+            if(Input.GetKeyDown(KeyCode.C ) && canAttack){
                 Attack();
                 timeBetweenAttack = startTimeBetweenAttack;
             }
@@ -159,7 +161,7 @@ public class PlayerController : MonoBehaviour
 
     private void Attack()
     {
-
+        canMove = false;
         klyp.Attack();
         Collider2D[] enemiesToDamage = Physics2D.OverlapBoxAll(
             attackPosition.position,

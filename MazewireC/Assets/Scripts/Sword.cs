@@ -15,9 +15,8 @@ public class Sword : MonoBehaviour
     // Update is called once per frame
     public void EndAttack()
     {
-        Debug.Log(klypAnim.name);
         klypAnim.SetBool("isAttacking", false);
-        // gameObject.SetActive(false);
-        Destroy(gameObject);    
+        FindObjectOfType<PlayerController>().canMove = true;
+        Destroy(gameObject);
     }
 }

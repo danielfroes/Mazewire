@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 7819104725885313829}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 12.76, y: 5.88, z: -5.539063}
-  m_LocalScale: {x: 9.95531, y: 9.761088, z: 0.64957}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -70,8 +70,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.46226418, g: 0.44263977, b: 0.44263977, a: 1}
+  m_Sprite: {fileID: 21300000, guid: ae251da518fa60f438663582ab83c328, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -112,5 +112,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef13303be85711d4594858de89d4af5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coroutineRunning: 0
   bossAnim: {fileID: 7819104725885313828}
+  bigSword: {fileID: 1657626727211210101, guid: b34347189bcdf1e4db2e14a3d6756964,
+    type: 3}
