@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
 
     private float timeBetweenAttack;
+    private float timeBeforeCanMove;
     public float startTimeBetweenAttack;
     public float attackRangeX;
     public float attackRangeY;
@@ -56,7 +57,18 @@ public class PlayerController : MonoBehaviour
         float xRaw = Input.GetAxisRaw("Horizontal");
         float yRaw = Input.GetAxisRaw("Vertical");
         Vector2 dir = new Vector2(x, y);
-        Walk(dir);
+
+        if(timeBeforeCanMove > 0)
+        {
+            timeBeforeCanMove -= 1;
+        }
+        else {
+            canMove = true;
+        }
+
+        if(canMove) {
+            Walk(dir);
+        }
 
         // jump:
         if(isGrounded && Input.GetKeyDown(KeyCode.Z) && canMove)
@@ -84,7 +96,7 @@ public class PlayerController : MonoBehaviour
             timeBetweenAttack -= Time.deltaTime;
         }
 
-        // velocity update:
+        // velocity Y coordinate update:
         if(rb.velocity.y < 0 && canMove)
         {
             rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
@@ -154,5 +166,12 @@ public class PlayerController : MonoBehaviour
         {
             enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(damage);
         }
+    }
+
+    public void TakeDamage()
+    {
+        canMove = false;
+        rb.AddForce(transform.up * 7, ForceMode2D.Impulse);
+        timeBeforeCanMove = 50;
     }
 }
