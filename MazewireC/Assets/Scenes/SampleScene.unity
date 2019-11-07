@@ -516,6 +516,18 @@ MonoBehaviour:
   health: 2
   speed: 4
   timeBeforeChangingDirection: 75
+--- !u!114 &503141214 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6501438702621114787, guid: 68005827a04152b478778020ec8a6134,
+    type: 3}
+  m_PrefabInstance: {fileID: 1997714330}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d7db4696a79f7d4a92cd1219b2d88e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &553481821
 GameObject:
   m_ObjectHideFlags: 0
@@ -1532,7 +1544,7 @@ PrefabInstance:
         type: 3}
       propertyPath: heartsUI
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 503141214}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fec7a9e55dd96241ac7adcbdbac0f01, type: 3}
 --- !u!1001 &3812456403843275551
