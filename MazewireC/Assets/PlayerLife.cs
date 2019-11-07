@@ -10,12 +10,13 @@ public class PlayerLife : MonoBehaviour
     [SerializeField] private int totalHealth= 3;
     private int health;
     public bool inCombat = true;
+    public bool isVunerable = true;
     [SerializeField] private HealthHeartsUI heartsUI;
 
     // Start is called before the first frame update
     void Start()
     {
-        health = 2;
+        health = totalHealth;
         heartsUI.DrawHearts(health, totalHealth);
     }
 
@@ -31,7 +32,7 @@ public class PlayerLife : MonoBehaviour
     public void TakeDamage()
     {
         health --;
-        // heartsUI.DrawHearts(health, totalHealth);
+        heartsUI.DrawHearts(health, totalHealth);
     }
-
+    
 }
