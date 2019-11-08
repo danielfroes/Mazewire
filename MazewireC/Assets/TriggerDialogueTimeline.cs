@@ -7,13 +7,13 @@ public class TriggerDialogueTimeline : triggerDialogue
 {
 
 
-    [SerializeField] private PlayableDirector director;
+
     // Start is called before the first frame update
 
     // Update is called once per frame
   
 
-      public void StartDialogueInTimeline()
+    public void StartDialogueInTimeline()
     {
         //Debug.Log("Texto rodou");
         //director.enabled = false;

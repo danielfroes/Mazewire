@@ -10,7 +10,7 @@ public class Destroy : MonoBehaviour
     public void DestroyObject()
     {
         FindObjectOfType<PlayerController>().canMove = true;
-        Instantiate(boss);
+        boss.SetActive(true);
         gameObject.SetActive(false);
     }
 }

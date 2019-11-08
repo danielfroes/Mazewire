@@ -43,7 +43,7 @@ public class StartBossFight : MonoBehaviour
         
         player.canAttack = false;
         player.canMove = false;
-        
+
         dialogueHandler.StartDialogue();
       
        
@@ -58,4 +58,7 @@ public class StartBossFight : MonoBehaviour
         dialogueHandler.OnDialogueEnd -= StartBoss; 
         gameObject.SetActive(false);
     }
+
+
+    
 }

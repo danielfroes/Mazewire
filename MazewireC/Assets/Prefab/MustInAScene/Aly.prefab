@@ -54,7 +54,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517897028287834353}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.0801, z: 0}
+  m_LocalPosition: {x: 0.164, y: -2.156, z: 0}
   m_LocalScale: {x: 0.14285713, y: 0.05, z: 1}
   m_Children: []
   m_Father: {fileID: 8916271876519007765}
@@ -84,7 +84,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517897029464773668}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.54, y: -2.15, z: 0}
+  m_LocalPosition: {x: 0.54, y: -2.147, z: 0}
   m_LocalScale: {x: 0.14285713, y: 0.05, z: 1}
   m_Children: []
   m_Father: {fileID: 8916271876519007765}
@@ -114,7 +114,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517897030000313677}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.31, y: -2.13, z: 0}
+  m_LocalPosition: {x: -0.31, y: -2.1309998, z: 0}
   m_LocalScale: {x: 0.14285713, y: 0.05, z: 1}
   m_Children: []
   m_Father: {fileID: 8916271876519007765}
@@ -292,9 +292,9 @@ MonoBehaviour:
   attackRangeY: 2.5
   damage: 40
   speed: 10
-  jumpForce: 10
+  jumpForce: 9
   fallMultiplier: 5
-  lowJumpMultiplier: 2
+  lowJumpMultiplier: 0
   dashSpeed: 20
   isGrounded: 0
   hasDashed: 0
@@ -320,10 +320,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1600cfd12f755f499d18f48e22e2bf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalHealth: 5
+  totalHealth: 3
   inCombat: 1
   isVunerable: 1
+  spriteBlinkingMiniDuration: 0.1
+  spriteBlinkingTotalDuration: 1
   heartsUI: {fileID: 0}
+  secondsToRegen: 3
 --- !u!1 &8916271878577787618
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,7 +356,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8916271878577787618}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.89, y: -0.257, z: 0}
+  m_LocalPosition: {x: 1.63, y: 0.28, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6413808229481295278}
@@ -460,7 +463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1c19b07665ef064295da819d39cb791, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boss: {fileID: 7819104725885313829, guid: 8b9d3b6ad719d2c4bbb468e0f53f4b8f, type: 3}
+  boss: {fileID: 0}
 --- !u!114 &804544811
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -99,3 +99,5 @@ MonoBehaviour:
   target: {fileID: 0}
   smoothSpeed: 0.2
   offset: {x: 0, y: 3, z: 0}
+  cameraPosition: {x: 0, y: 0}
+  isCameraFollowingPlayer: 1

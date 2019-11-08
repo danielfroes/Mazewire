@@ -446,42 +446,42 @@ AnimationClip:
     intParameter: 0
     messageOptions: 0
   - time: 2.9166667
-    functionName: 
+    functionName: SpawnBigSword
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 3.1666667
-    functionName: 
+    functionName: SpawnBigSword
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 3.4166667
-    functionName: 
+    functionName: SpawnBigSword
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 3.5833333
-    functionName: 
+    functionName: SpawnBigSword
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 3.8333333
-    functionName: 
+    functionName: SpawnBigSword
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 4.0833335
-    functionName: 
+    functionName: SpawnBigSword
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

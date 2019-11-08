@@ -10,6 +10,6 @@ public class TelaMorte : MonoBehaviour
     }
 
     public void RestartGameplay() {
-        Debug.Log("Just Kidding, you just can't");
+        SceneManager.LoadScene("FaseRestart");
     }
 }
