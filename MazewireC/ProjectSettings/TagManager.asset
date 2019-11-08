@@ -16,7 +16,7 @@ TagManager:
   - Ground
   - Enemy
   - Player
-  - 
+  - Parede
   - 
   - 
   - 
@@ -52,4 +52,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1771108559
+    locked: 0
+  - name: Lava
+    uniqueID: 4209960945
     locked: 0
