@@ -10,7 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceab03ca0d7419249be29e14ffff0a62, type: 3}
-  m_Name: NewDialogue
+  m_Name: Dialogue3.1
   m_EditorClassIdentifier: 
   lines:
-    array: []
+    array:
+    - title: Klyp
+      text: "Parece que a porta Para o Pr\xE9dio est\xE1 trancada."
+    - title: Aly
+      text: "Hmm... Aquilo \xE9 um computador? Por que ele est\xE1 ali?"
+    - title: Klyp
+      text: "Ah.. Essas tralhas ai s\xE3o usadas pelos guardas para sair e entrar
+        do pr\xE9dio. Aposto que deve conter ele ter acesso a outras coisas tamb\xE9m."
+    - title: Klyp
+      text: "Mas ningu\xE9m mais, hoje em dia entende essa velharia..  O lugar disso
+        \xE9 em um museu."
+    - title: Aly
+      text: "Hmm..  Bom, tenho alguma experiencia mexendo com esses dispositivos.
+        Vamos ver o que eu posso fazer. Como fa\xE7o para ligar essa belezinha?"
+    - title: Klyp
+      text: Para ligar basta apertar a tecla E enquanto estiver em sua frente.

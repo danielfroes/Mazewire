@@ -16,3 +16,11 @@ MonoBehaviour:
     array:
     - title: Klyp
       text: "CUIDADO, INIMIGOS EST\xC3O CHEGANDO\r"
+    - title: Aly
+      text: O que?? Como vamos nos defender?
+    - title: Klyp
+      text: "Hahah... N\xE3o se lembra com quem voc\xEA ta falando? Relaxe e fique
+        atr\xE1s de mim que eu cuido disso! "
+    - title: Klyp
+      text: "Quando quiser que eu ataque, aperte C para ativar minhas defesas. E tente
+        n\xE3o ficar dando de cara nesses brutamontes, n\xE3o parece ser uma boa ideia."
