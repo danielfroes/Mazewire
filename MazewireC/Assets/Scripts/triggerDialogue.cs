@@ -39,6 +39,7 @@ public class triggerDialogue : MonoBehaviour
         player.canMove = true;
         player.canAttack = true;
         dialogueHandler.OnDialogueEnd -= ReturnPlayerMovement;
+        gameObject.SetActive(false);
     }
 
   

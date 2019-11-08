@@ -22,7 +22,8 @@ public class Enemy : MonoBehaviour
     private PlayerLife playerLife;
     Rigidbody2D rb;
     private bool goingRight = true;
-
+   
+    [SerializeField] private bool isArena = false;
     [SerializeField] private TriggerCombatSession combatManager; 
 
     void Start()
@@ -49,11 +50,15 @@ public class Enemy : MonoBehaviour
         float playerDistance = Vector2.Distance(player.position, transform.position);
         if(health <= 0)
         {
-            combatManager.enemiesQtt --;
+            
+            if(isArena)
+                combatManager.enemiesQtt --;
+            
             playerLife.inCombat = false;
+            
             Destroy(gameObject);
         }
-        else if(playerDistance < 25f)
+        else if(playerDistance < 15f)
         {
             anim.SetBool("isWalking",true);
             playerLife.inCombat = true;

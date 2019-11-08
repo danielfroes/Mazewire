@@ -21,7 +21,7 @@ public abstract class TriggerHacking : MonoBehaviour
     }
     void OnTriggerStay2D(Collider2D col)
     {
-
+        Debug.Log(hacking.name);
         if(col.tag == "Player" &&  Input.GetKeyDown(KeyCode.E) && !Hacking.isHacking)
         {
             

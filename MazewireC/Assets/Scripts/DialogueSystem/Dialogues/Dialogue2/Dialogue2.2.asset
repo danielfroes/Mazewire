@@ -23,17 +23,9 @@ MonoBehaviour:
       text: "Mas eu n\xE3o estou invadindo, eu n\xE3o sei nem como vim parar aqui!"
     - title: Klyp
       text: "Bom, isso n\xE3o importa pra eles..."
-    - title: Klyp
-      text: "Mas veja pelo lado bom, a Chave do Mainframe fica no topo desse pr\xE9dio."
-    - title: Klyp
-      text: Vamos! Eu vou te ajudar a voltar para casa!!
     - title: Aly
-      text: "S\xE9rio?! Voc\xEA faria isso por mim?"
-    - title: Klyp
-      text: "Claro, por que n\xE3o? Voc\xEA parece precisar de ajuda"
-    - title: Aly
-      text: "Bom, aceito toda a ajuda que eu conseguir. Mas se eles me atacaram por
-        eu estar \"invadindo\" por que eles atacaram voc\xEA tamb\xE9m?"
+      text: "Mas se eles me atacaram por eu estar \"invadindo\" por que eles atacaram
+        voc\xEA tamb\xE9m?"
     - title: Klyp
       text: "Err.. uhm.... \xC9 porque.. \xC9 porque eles s\xE3o criaturas meio tapadas
         intelectualmente, eles te viram invadindo e por eu estar perto sobrou pra
@@ -41,11 +33,11 @@ MonoBehaviour:
     - title: Aly
       text: Mas isso nao faz sentid...
     - title: Klyp
-      text: " Voc\xEA reparou o quanto deve ser chato trabalhar aqui nesse pr\xE9dio?
-        Essas bugigangas empresariais, todas igualmente monotonas e depressivas"
+      text: "Voc\xEA reparou o quanto deve ser chato trabalhar aqui nesse lugar? Essas
+        bugigangas empresariais, todas igualmente monotonas e depressivas"
     - title: Aly
       text: Realmente, parece que a chatisse acompanha o ambiente empresarial em todos
         os mundos...
-    - title: Aly
-      text: Realmente, parece que a chatisse acompanha o ambiente empresarial em todos
-        os mundos...
+    - title: Klyp
+      text: "Enfim, voltando ao que interessa, a Chave do Mainframe fica no topo do
+        pr\xE9dio. Vamos logo, n\xE3o temos tempo a perder."

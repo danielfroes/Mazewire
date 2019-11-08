@@ -2,18 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossHack : TriggerHacking
+public class Lava : MonoBehaviour
 {
     // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
 
     // Update is called once per frame
     void Update()
     {
         
     }
-
-    public override void EndHacking()
-    {   
-        Debug.Log("Dano no boss!!!!");
+    void OnTriggerEnter2D(Collider2D col) 
+    {
+        if(col.tag == "Player")
+        {
+            FindObjectOfType<PlayerLife>().Die();
+        }
     }
 }

@@ -1,6 +1,7 @@
 ﻿ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerLife : MonoBehaviour
 {
@@ -33,7 +34,10 @@ public class PlayerLife : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-
+        if(health < 0)
+        {
+            Die();
+        }
 
         if(blinking)
         {
@@ -71,7 +75,10 @@ public class PlayerLife : MonoBehaviour
         }
     }
 
-
+    public void Die()
+    {
+        SceneManager.LoadScene("TelaMorte");
+    }           
     void SpriteBlinkingEffect()
     {
         spriteBlinkingTotalTimer += Time.deltaTime;
