@@ -16,7 +16,7 @@ public class Sword : MonoBehaviour
     public void EndAttack()
     {
         klypAnim.SetBool("isAttacking", false);
-        FindObjectOfType<PlayerController>().canMove = true;
+        // FindObjectOfType<PlayerController>().canMove = true;
         Destroy(gameObject);
     }
 }

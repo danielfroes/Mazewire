@@ -17,23 +17,27 @@ public class Enemy : MonoBehaviour
     private float spriteBlinkingTotalTimer;
     public float spriteBlinkingTotalDuration; //1
     private bool blinking;
-
+    private Animator anim;
+    private SpriteRenderer spriteRenderer;
+    private PlayerLife playerLife;
     Rigidbody2D rb;
     private bool goingRight = true;
+
+    [SerializeField] private TriggerCombatSession combatManager; 
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        playerLife = FindObjectOfType<PlayerLife>();
         facingRight = false;
     }
 
     void Update()
     {
         // died
-        if(health <= 0)
-        {
-            Destroy(gameObject);
-        }
+        
 
         // took damage
         if(blinking)
@@ -43,25 +47,46 @@ public class Enemy : MonoBehaviour
 
         // movement
         float playerDistance = Vector2.Distance(player.position, transform.position);
-        if(playerDistance < 10f)
+        if(health <= 0)
         {
-            transform.position = Vector2.MoveTowards(
-                transform.position,
-                new Vector2(player.position.x, transform.position.y),
-                speed * Time.deltaTime
-            );
+            combatManager.enemiesQtt --;
+            playerLife.inCombat = false;
+            Destroy(gameObject);
+        }
+        else if(playerDistance < 25f)
+        {
+            anim.SetBool("isWalking",true);
+            playerLife.inCombat = true;
+            if(player.position.x > transform.position.x)
+            {
+                rb.velocity = new Vector2(speed, 0);
+            }
+            else if(player.position.x < transform.position.x)
+            {
+                rb.velocity = new Vector2(-speed, 0);
+            }
+            // transform.position =  Vector2.MoveTowards(
+            //     transform.position,
+            //     new Vector2(player.position.x, transform.position.y),
+            //     speed * Time.deltaTime
+            // );
+        }
+        else
+        {
+            playerLife.inCombat = false;
+            anim.SetBool("isWalking", false);
         }
 
         // flip sprite
         var side = player.position.x - transform.position.x;
         if(!facingRight && side > 0)
         {
-            Debug.Log("fliping to face right");
+            // Debug.Log("fliping to face right");
             Flip();
         }
         else if(facingRight && side < 0)
         {
-            Debug.Log("fliping to face left");
+            // Debug.Log("fliping to face left");
             Flip();
         }
     }
@@ -70,7 +95,7 @@ public class Enemy : MonoBehaviour
     {
         if(col.gameObject.name == "Aly")
         {
-            col.gameObject.GetComponent<PlayerController>().TakeDamage();
+            playerLife.TakeDamage();
         }
     }
 
@@ -95,7 +120,7 @@ public class Enemy : MonoBehaviour
         {
             blinking = false;
             spriteBlinkingTotalTimer = 0.0f;
-            gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            spriteRenderer.enabled = true;
             return;
         }
 
@@ -103,13 +128,13 @@ public class Enemy : MonoBehaviour
         if(spriteBlinkingTimer >= spriteBlinkingMiniDuration)
         {
             spriteBlinkingTimer = 0.0f;
-            if(gameObject.GetComponent<SpriteRenderer>().enabled == true)
+            if(spriteRenderer.enabled == true)
             {
-                gameObject.GetComponent<SpriteRenderer>().enabled = false;
+                spriteRenderer.enabled = false;
             }
             else
             {
-                gameObject.GetComponent<SpriteRenderer>().enabled = true;
+                spriteRenderer.enabled = true;
             }
         }
     }

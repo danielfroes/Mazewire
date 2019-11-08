@@ -11,11 +11,13 @@ public class StartBossFight : MonoBehaviour
     [SerializeField] private Animator klypAnim;
     private PlayerController player;
     private Fog.Dialogue.DialogueHandler dialogueHandler;
+    private CameraMovement camera;
    
     void Start()
     {
         dialogueHandler = GetComponent<Fog.Dialogue.DialogueHandler>();
         player = FindObjectOfType<PlayerController>();
+        camera = FindObjectOfType<CameraMovement>();
     }
    
     void OnTriggerEnter2D(Collider2D col)
@@ -36,8 +38,8 @@ public class StartBossFight : MonoBehaviour
     }
     private void TriggerBossFight()
     {
-        CameraMovement.isCameraFollowingPlayer = false;
-        CameraMovement.cameraPosition = bossFightCamera;
+        camera.isCameraFollowingPlayer = false;
+        camera.cameraPosition = bossFightCamera;
         
         player.canAttack = false;
         player.canMove = false;

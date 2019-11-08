@@ -45,6 +45,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        
         if(Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"))   ||
           (Physics2D.Linecast(transform.position, groundCheckL.position, 1 << LayerMask.NameToLayer("Ground"))) ||
           (Physics2D.Linecast(transform.position, groundCheckR.position, 1 << LayerMask.NameToLayer("Ground"))))
@@ -70,15 +71,7 @@ public class PlayerController : MonoBehaviour
         {
             Walk(new Vector2(0,0));
         } 
-        // Vector2 dir = new Vector2(x, y);
-
-        if(timeBeforeCanMove > 0)
-        {
-            timeBeforeCanMove -= 1;
-        }
-        else {
-            canMove = true;
-        }
+        
 
 
         // jump:
@@ -174,7 +167,7 @@ public class PlayerController : MonoBehaviour
 
     private void Attack()
     {
-        canMove = false;
+        // canMove = false;
         klyp.Attack();
         Collider2D[] enemiesToDamage = Physics2D.OverlapBoxAll(
             attackPosition.position,
@@ -188,12 +181,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void TakeDamage()
-    {
-        canMove = false;
-        rb.AddForce(transform.up * 7, ForceMode2D.Impulse);
-        timeBeforeCanMove = 50;
-    }
+   
 
 
 }

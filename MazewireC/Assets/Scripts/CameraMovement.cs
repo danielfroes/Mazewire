@@ -7,8 +7,9 @@ public class CameraMovement : MonoBehaviour
     public Transform target = null;
 	public float smoothSpeed = 0.125f;
 	[SerializeField] private Vector3 offset;
-    public static bool isCameraFollowingPlayer = true;
-    public static Vector2 cameraPosition;
+    public  Vector2 cameraPosition;
+    public  bool isCameraFollowingPlayer = true;
+
     // public bool bounds;
     // public Vector3 minCameraPos;
     // public Vector3 maxCameraPos;
@@ -21,10 +22,16 @@ public class CameraMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate(){
 
-    	Vector3 desiredPosition 	= new Vector3(target.position.x + offset.x, target.position.y + offset.y, -10);
-    	Vector3 smoothedPosition 	= Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
-
-    	transform.position = smoothedPosition;
+        if(isCameraFollowingPlayer)
+        {  
+            Vector3 desiredPosition 	= new Vector3(target.position.x + offset.x, target.position.y + offset.y, -10);
+            Vector3 smoothedPosition 	= Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
+            transform.position = smoothedPosition;
+        }
+        else
+        {
+            transform.position = new Vector3(cameraPosition.x, cameraPosition.y, transform.position.z);
+        }
 
         // if(bounds){
 
