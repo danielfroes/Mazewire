@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 21a30b2beb45e3a47a200e8a4e1d90e9
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Digitalis
+  fontNames:
+  - Digitalis
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 315ace03391463443b0f5bf8bd6dad20, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

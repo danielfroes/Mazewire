@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     private bool facingRight = true;
     public bool isGrounded;
     public bool hasDashed;
-    [HideInInspector]public bool canMove = false;
+    [HideInInspector]public bool canMove = true;
     [HideInInspector]public bool canAttack = true;
 
     public LayerMask whatIsEnemies;
@@ -194,4 +194,6 @@ public class PlayerController : MonoBehaviour
         rb.AddForce(transform.up * 7, ForceMode2D.Impulse);
         timeBeforeCanMove = 50;
     }
+
+
 }

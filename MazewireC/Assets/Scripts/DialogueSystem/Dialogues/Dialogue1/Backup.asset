@@ -10,23 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceab03ca0d7419249be29e14ffff0a62, type: 3}
-  m_Name: "Introdu\xE7\xE3o"
+  m_Name: Backup
   m_EditorClassIdentifier: 
   lines:
     array:
-    - title: Aly
-      text: "Ahh, finalmente um tempo livre pra descansar. J\xE1 fazia algum tempo
-        desde a \xFAltima vez que entrei em Parallel World."
-    - title: Aly
-      text: "Mas o que... Oi???... Que lugar \xE9 esse??"
-    - title: Aly
-      text: "Oh n\xE3o, perdi o acesso aos menus do jogo! Como eu vou sair daqui agora????"
-    - title: Aly
-      text: AAAAAAAAAHHHH SOCORROOOOO
-    - title: Klyp
-      text: "Mas o que diabos est\xE1 acontecendo aqui? Que barulheira \xE9 essa?...\r"
-    - title: Klyp
-      text: '!!!'
     - title: Klyp
       text: "Mas o que em nome de nossa senhora das motherboards \xE9 voc\xEA?"
     - title: Aly

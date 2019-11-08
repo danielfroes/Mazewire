@@ -5,7 +5,7 @@ using UnityEngine;
 public class triggerDialogue : MonoBehaviour
 {
 
-    private Fog.Dialogue.DialogueHandler dialogueHandler;
+    protected Fog.Dialogue.DialogueHandler dialogueHandler;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,4 +26,6 @@ public class triggerDialogue : MonoBehaviour
             dialogueHandler.Skip();
         }
     }
+
+  
 }
